@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dpisunaexamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Examen: Parcial1" FontSize="20" HorizontalTextAlignment="Center" />
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"></Image>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>                    
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" FontSize="20"  Grid.Row="0" Grid.Column="0"/>
+                <Label Text="CONTRASENA" FontSize="20"  Grid.Row="1" Grid.Column="0"/>
+
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese el Usuario" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtPassword" Placeholder="Ingrese la Contrasena" Grid.Row="1" Grid.Column="1" IsPassword="True"/>
+
+            </Grid>
+
+
+            <Button x:Name="btnIniciar" Clicked="btnIniciar_Clicked" Text="INICIAR SESION" FontSize="20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
